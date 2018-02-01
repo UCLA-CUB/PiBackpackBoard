@@ -1,0 +1,436 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Zilog
+LIBS:Xicor
+LIBS:video
+LIBS:ttl_ieee
+LIBS:transf
+LIBS:Symbols_Transformer-Diskrete_RevA
+LIBS:Symbols_Socket-DIN41612_RevA
+LIBS:SymbolsSimilarEN60617+oldDIN617-RevE8
+LIBS:Symbols_Microcontroller_Philips-NXP_RevA_06Oct2013
+LIBS:Symbols_ICs-Opto_RevB_16Sep2013
+LIBS:Symbols_ICs-Diskrete_RevD10
+LIBS:Symbols_EN60617-10_HF-Radio_DRAFT_12Sep2013
+LIBS:Symbols_EN60617_13Mar2013
+LIBS:Symbols_DCDC-ACDC-Converter_RevC_20Jul2012
+LIBS:switches
+LIBS:supertex
+LIBS:stm32f100-discovery-shield-cache
+LIBS:stm32f100-discovery-shield
+LIBS:stm32
+LIBS:stm8
+LIBS:msp430
+LIBS:PiBackpack-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 8750 3700 2    60   Input ~ 0
+VBAT_SENSE
+$Comp
+L R R6
+U 1 1 56B5BE91
+P 2200 4050
+F 0 "R6" V 2280 4050 50  0000 C CNN
+F 1 "1.5K" V 2200 4050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 2130 4050 50  0001 C CNN
+F 3 "" H 2200 4050 50  0000 C CNN
+F 4 "RR05P1.5KDCT-ND" V 2200 4050 60  0001 C CNN "Digikey Part No."
+F 5 "Susumu" V 2200 4050 60  0001 C CNN "Manufacturer"
+F 6 "RR0510P-152-D" V 2200 4050 60  0001 C CNN "Mfr. Part No."
+	1    2200 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 56B5BE98
+P 2200 3550
+F 0 "R5" V 2280 3550 50  0000 C CNN
+F 1 "11K" V 2200 3550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 2130 3550 50  0001 C CNN
+F 3 "" H 2200 3550 50  0001 C CNN
+F 4 "RR08P11.0KDCT-ND" V 2200 3550 60  0001 C CNN "Digikey Part No."
+F 5 "Susumu" V 2200 3550 60  0001 C CNN "Manufacturer"
+F 6 "RR0816P-113-D" V 2200 3550 60  0001 C CNN "Mfr. Part No."
+	1    2200 3550
+	1    0    0    -1  
+$EndComp
+Text GLabel 2200 3300 1    60   Input ~ 0
+V_SBAT_24
+Text GLabel 2300 3800 2    60   Input ~ 0
+V_SBAT_DIV
+$Comp
+L R R7
+U 1 1 56B5BEA1
+P 3000 3550
+F 0 "R7" V 3080 3550 50  0000 C CNN
+F 1 "4.3K" V 3000 3550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 2930 3550 50  0001 C CNN
+F 3 "" H 3000 3550 50  0000 C CNN
+F 4 "RR08P4.3KDCT-ND" V 3000 3550 60  0001 C CNN "Digikey Part No."
+F 5 "Susumu" V 3000 3550 60  0001 C CNN "Manufacturer"
+F 6 "RR0816P-432-D" V 3000 3550 60  0001 C CNN "Mfr. Part No."
+	1    3000 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 56B5BEA8
+P 3000 4050
+F 0 "R8" V 3080 4050 50  0000 C CNN
+F 1 "7.5K" V 3000 4050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 2930 4050 50  0001 C CNN
+F 3 "" H 3000 4050 50  0000 C CNN
+F 4 "RR05P7.5KDCT-ND" V 3000 4050 60  0001 C CNN "Digikey Part No."
+F 5 "Susumu" V 3000 4050 60  0001 C CNN "Manufacturer"
+F 6 "RR0510P-752-D" V 3000 4050 60  0001 C CNN "Mfr. Part No."
+	1    3000 4050
+	1    0    0    -1  
+$EndComp
+Text GLabel 3100 3800 2    60   Input ~ 0
+V_SBAT_DREF
+$Comp
+L LM358 U2
+U 2 1 56B5BEB3
+P 8150 3700
+F 0 "U2" H 8100 3900 50  0000 L CNN
+F 1 "LM358" H 8100 3450 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 8150 3700 50  0001 C CNN
+F 3 "http://www.st.com/web/en/resource/technical/document/datasheet/CD00000464.pdf" H 8150 3700 50  0001 C CNN
+F 4 "497-1591-1-ND" H 8150 3700 60  0001 C CNN "Digikey Part No."
+F 5 "ST Microelectronics" H 8150 3700 60  0001 C CNN "Manufacturer"
+F 6 "LM358DT" H 8150 3700 60  0001 C CNN "Mfr. Part No."
+	2    8150 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R9
+U 1 1 56B5BEC1
+P 7300 3600
+F 0 "R9" V 7380 3600 50  0000 C CNN
+F 1 "5.1K" V 7300 3600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7230 3600 50  0001 C CNN
+F 3 "" H 7300 3600 50  0000 C CNN
+F 4 "RR08P5.1KDCT-ND" V 7300 3600 60  0001 C CNN "Digikey Part No."
+F 5 "Susumu" V 7300 3600 60  0001 C CNN "Manufacturer"
+F 6 "RR0816P-512-D" V 7300 3600 60  0001 C CNN "Mfr. Part No."
+	1    7300 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L R R11
+U 1 1 56B5BECF
+P 7550 4100
+F 0 "R11" V 7630 4100 50  0000 C CNN
+F 1 "15K" V 7550 4100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 7480 4100 50  0001 C CNN
+F 3 "" H 7550 4100 50  0000 C CNN
+F 4 "RR05P15.0KDCT-ND" V 7550 4100 60  0001 C CNN "Digikey Part No."
+F 5 "Susumu" V 7550 4100 60  0001 C CNN "Manufacturer"
+F 6 "RR0510P-153-D" V 7550 4100 60  0001 C CNN "Mfr. Part No."
+	1    7550 4100
+	-1   0    0    1   
+$EndComp
+Text GLabel 7050 3600 0    60   Input ~ 0
+V_SBAT_DIV_BUF
+Text GLabel 7050 3800 0    60   Input ~ 0
+V_SBAT_DREF_BUF
+Text Notes 6050 3250 0    60   ~ 0
+Battery Voltage Detection
+$Comp
+L GNDA #PWR025
+U 1 1 56B5BED9
+P 2200 4350
+F 0 "#PWR025" H 2200 4100 50  0001 C CNN
+F 1 "GNDA" H 2200 4200 50  0000 C CNN
+F 2 "" H 2200 4350 50  0000 C CNN
+F 3 "" H 2200 4350 50  0000 C CNN
+	1    2200 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR026
+U 1 1 56B5BEDF
+P 3000 4350
+F 0 "#PWR026" H 3000 4100 50  0001 C CNN
+F 1 "GNDA" H 3000 4200 50  0000 C CNN
+F 2 "" H 3000 4350 50  0000 C CNN
+F 3 "" H 3000 4350 50  0000 C CNN
+	1    3000 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR027
+U 1 1 56B5BEE5
+P 7550 4350
+F 0 "#PWR027" H 7550 4100 50  0001 C CNN
+F 1 "GNDA" H 7550 4200 50  0000 C CNN
+F 2 "" H 7550 4350 50  0000 C CNN
+F 3 "" H 7550 4350 50  0000 C CNN
+	1    7550 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR028
+U 1 1 56B5BEEB
+P 8050 4350
+F 0 "#PWR028" H 8050 4100 50  0001 C CNN
+F 1 "GNDA" H 8050 4200 50  0000 C CNN
+F 2 "" H 8050 4350 50  0000 C CNN
+F 3 "" H 8050 4350 50  0000 C CNN
+	1    8050 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3VADC #PWR029
+U 1 1 56B5BEF1
+P 3000 3300
+F 0 "#PWR029" H 3150 3250 50  0001 C CNN
+F 1 "+3.3VADC" H 3000 3400 50  0000 C CNN
+F 2 "" H 3000 3300 50  0000 C CNN
+F 3 "" H 3000 3300 50  0000 C CNN
+	1    3000 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3VADC #PWR030
+U 1 1 56B5BEF7
+P 8050 3300
+F 0 "#PWR030" H 8200 3250 50  0001 C CNN
+F 1 "+3.3VADC" H 8050 3400 50  0000 C CNN
+F 2 "" H 8050 3300 50  0000 C CNN
+F 3 "" H 8050 3300 50  0000 C CNN
+	1    8050 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM358 U2
+U 1 1 56C13C7F
+P 4800 2950
+F 0 "U2" H 4750 3150 50  0000 L CNN
+F 1 "LM358" H 4750 2700 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 4800 2950 50  0001 C CNN
+F 3 "http://www.st.com/web/en/resource/technical/document/datasheet/CD00000464.pdf" H 4800 2950 50  0001 C CNN
+F 4 "497-1591-1-ND" H 4800 2950 60  0001 C CNN "Digikey Part No."
+F 5 "ST Microelectronics" H 4800 2950 60  0001 C CNN "Manufacturer"
+F 6 "LM358DT" H 4800 2950 60  0001 C CNN "Mfr. Part No."
+	1    4800 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3VADC #PWR031
+U 1 1 56C14436
+P 4700 2550
+F 0 "#PWR031" H 4850 2500 50  0001 C CNN
+F 1 "+3.3VADC" H 4700 2650 50  0000 C CNN
+F 2 "" H 4700 2550 50  0000 C CNN
+F 3 "" H 4700 2550 50  0000 C CNN
+	1    4700 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR032
+U 1 1 56C1445F
+P 4700 3600
+F 0 "#PWR032" H 4700 3350 50  0001 C CNN
+F 1 "GNDA" H 4700 3450 50  0000 C CNN
+F 2 "" H 4700 3600 50  0000 C CNN
+F 3 "" H 4700 3600 50  0000 C CNN
+	1    4700 3600
+	1    0    0    -1  
+$EndComp
+Text GLabel 4400 2850 0    60   Input ~ 0
+V_SBAT_DREF
+Text GLabel 5300 2950 2    60   Input ~ 0
+V_SBAT_DREF_BUF
+Wire Wire Line
+	2200 3300 2200 3300
+Wire Wire Line
+	2200 3300 2200 3400
+Wire Wire Line
+	2200 3700 2200 3900
+Wire Wire Line
+	2200 4200 2200 4350
+Wire Wire Line
+	2200 3800 2300 3800
+Connection ~ 2200 3800
+Wire Wire Line
+	3000 3300 3000 3400
+Wire Wire Line
+	3000 3700 3000 3900
+Wire Wire Line
+	3000 4200 3000 4350
+Wire Wire Line
+	3100 3800 3000 3800
+Connection ~ 3000 3800
+Wire Wire Line
+	7450 3600 7850 3600
+Wire Wire Line
+	7550 3600 7550 3950
+Connection ~ 7550 3600
+Wire Wire Line
+	7450 3800 7850 3800
+Wire Wire Line
+	7750 3800 7750 4150
+Wire Wire Line
+	7750 4150 8150 4150
+Connection ~ 7750 3800
+Wire Wire Line
+	8050 4000 8050 4350
+Wire Wire Line
+	8450 3700 8750 3700
+Wire Wire Line
+	8600 3700 8600 4150
+Wire Wire Line
+	8600 4150 8450 4150
+Connection ~ 8600 3700
+Wire Wire Line
+	7550 4350 7550 4250
+Wire Wire Line
+	8050 3300 8050 3400
+Wire Wire Line
+	7050 3600 7150 3600
+Wire Wire Line
+	7050 3800 7150 3800
+Wire Wire Line
+	4700 2550 4700 2650
+Wire Wire Line
+	4500 2850 4400 2850
+Wire Wire Line
+	4500 3050 4400 3050
+Wire Wire Line
+	4400 3050 4400 3350
+Wire Wire Line
+	4400 3350 5200 3350
+Wire Wire Line
+	5200 3350 5200 2950
+Wire Wire Line
+	4700 3250 4700 3600
+Wire Wire Line
+	5100 2950 5300 2950
+Connection ~ 5200 2950
+$Comp
+L LM358 U5
+U 1 1 56C1B129
+P 4800 4450
+F 0 "U5" H 4750 4650 50  0000 L CNN
+F 1 "LM358" H 4750 4200 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 4800 4450 50  0001 C CNN
+F 3 "http://www.st.com/web/en/resource/technical/document/datasheet/CD00000464.pdf" H 4800 4450 50  0001 C CNN
+F 4 "497-1591-1-ND" H 4800 4450 60  0001 C CNN "Digikey Part No."
+F 5 "ST Microelectronics" H 4800 4450 60  0001 C CNN "Manufacturer"
+F 6 "LM358DT" H 4800 4450 60  0001 C CNN "Mfr. Part No."
+	1    4800 4450
+	1    0    0    -1  
+$EndComp
+Text GLabel 4400 4350 0    60   Input ~ 0
+V_SBAT_DIV
+Text GLabel 5300 4450 2    60   Input ~ 0
+V_SBAT_DIV_BUF
+Wire Wire Line
+	5100 4450 5300 4450
+Wire Wire Line
+	5200 4450 5200 4850
+Wire Wire Line
+	5200 4850 4400 4850
+Wire Wire Line
+	4400 4850 4400 4550
+Wire Wire Line
+	4400 4550 4500 4550
+Connection ~ 5200 4450
+Wire Wire Line
+	4700 4750 4700 4950
+Wire Wire Line
+	4700 4150 4700 4050
+Wire Wire Line
+	4500 4350 4400 4350
+$Comp
+L +3.3VADC #PWR033
+U 1 1 56C1B96C
+P 4700 4050
+F 0 "#PWR033" H 4850 4000 50  0001 C CNN
+F 1 "+3.3VADC" H 4700 4150 50  0000 C CNN
+F 2 "" H 4700 4050 50  0000 C CNN
+F 3 "" H 4700 4050 50  0000 C CNN
+	1    4700 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR034
+U 1 1 56C1BAAB
+P 4700 4950
+F 0 "#PWR034" H 4700 4700 50  0001 C CNN
+F 1 "GNDA" H 4700 4800 50  0000 C CNN
+F 2 "" H 4700 4950 50  0000 C CNN
+F 3 "" H 4700 4950 50  0000 C CNN
+	1    4700 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R10
+U 1 1 56C20239
+P 7300 3800
+F 0 "R10" V 7380 3800 50  0000 C CNN
+F 1 "5.1K" V 7300 3800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7230 3800 50  0001 C CNN
+F 3 "" H 7300 3800 50  0000 C CNN
+F 4 "RR08P5.1KDCT-ND" V 7300 3800 60  0001 C CNN "Digikey Part No."
+F 5 "Susumu" V 7300 3800 60  0001 C CNN "Manufacturer"
+F 6 "RR0816P-512-D" V 7300 3800 60  0001 C CNN "Mfr. Part No."
+	1    7300 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L R R12
+U 1 1 56C202FD
+P 8300 4150
+F 0 "R12" V 8380 4150 50  0000 C CNN
+F 1 "15K" V 8300 4150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 8230 4150 50  0001 C CNN
+F 3 "" H 8300 4150 50  0000 C CNN
+F 4 "RR05P15.0KDCT-ND" V 8300 4150 60  0001 C CNN "Digikey Part No."
+F 5 "Susumu" V 8300 4150 60  0001 C CNN "Manufacturer"
+F 6 "RR0510P-153-D" V 8300 4150 60  0001 C CNN "Mfr. Part No."
+	1    8300 4150
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
